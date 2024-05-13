@@ -1,0 +1,15 @@
+{
+  "name": "thetribe-tech",
+  "source": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
