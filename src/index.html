@@ -1,40 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv-se">
 
 <head>
   <title>The Tribe</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      languages.onchange = () => {
+        document.startViewTransition(() => {
+          newInput.checked = true
+        })
+      }
+    })
+  </script>
 </head>
 
 <body class="">
   <header class="flex justify-between align-center px-12 my-8">
     <a href="/">
-      <img src="./assets/img//image.svg" alt="the tribe logo" width="108">
+      <img src="/img/thetribe-logo.svg" alt="the tribe logo" width="108">
     </a>
-    <nav class="flex">
-      <a href="#contact" class="border border-2 rounded-lg p-4 uppercase cursor-pointer text-xs">Kontakta Oss</a>
+    <nav class="grid place-items-center">
+      <a href="#contact" class="border rounded-lg p-4 uppercase cursor-pointer text-xs">Kontakta Oss</a>
     </nav>
   </header>
-  <main></main>
-  <footer class="bg-grey-50">
-    <section>
-      <a href="https://maps.app.goo.gl/addkSC9Zocqfmm5V9" target="_blank" rel="noopener">
-        <img src="./assets/img/map.webp">
-      </a>
-    </section>
-    <section>
-      <a href="/">
-        <img src="./assets/img//image.svg" alt="the tribe logo" width="108">
-      </a>
-      <address>
-        <div>
-          <span>Tegelgårdsgatan 7B</span>
-          <span>211 33 Malmö</span>
+  <main>
+    <article class="grid place-items-center">
+      <section class="grid place-items-center max-w-[80ch] mx-2 px-8 py-12 border-b-2">
+        <h3 class="preamble uppercase opacity-70 text-xs">Vad vi tror på</h3>
+        <h1 class="title text-4xl">
+          <strong>The Tribe</strong> är ett konsultbolag som älskar tech men där människorna alltid kommer
+          först
+        </h1>
+      </section>
+      <section
+        class="max-w-[120ch] px-8 py-12 grid place-items-center grid-cols-1 lg:grid-cols-3 gap-x-16 gap-y-16 lg:gap-y-20">
+        <div class="lg:col-span-1 max-lg:order-2">
+          <h2 class="title text-4xl text-center">
+            Skräddarsytt!
+          </h2>
+          <p class="text max-w-[70ch]">
+            Genom att vara ett relativt litet konsultbolag med handplockade medarbetare kan vi lägga mer fokus på att
+            matcha varje medarbetare med rätt uppdrag. Det är inte alltid den tekniska kompetensen som avgör om ett
+            uppdrag är rätt. Istället handlar det minst lika mycket om sättet man jobbar på, hur organisationen ser ut
+            och
+            om värderingar och målsättningar.
+          </p>
         </div>
-        <a href="mailto:hello@thetribe.tech?subject=Hello!"></a>
-      </address>
+        <img class="lg:col-span-2 max-lg:order-1 object-cover" src="/img/65a6b73f60768b8c1ba3d5c8.webp"
+          alt="Photo of a keyboard">
+        <img class="lg:col-span-2 max-lg:order-3 object-cover" src="/img/65a7c92d0a71b78c010318e9.webp"
+          alt="Photo of a Rockclimber, for motivation">
+        <div class="lg:col-span-1 max-lg:order-4">
+          <h2 class="title text-4xl text-center">
+            Någon som utmanar
+          </h2>
+          <p class="text">
+            Behöver ert team förstärkning? Fantastiskt, låt oss prata! Är ni ute efter någon som inte bara uppfyller era
+            önskemål, utan även utmanar och accelererar er digitala resa? Ännu bättre! Vi strävar inte bara efter att
+            tillfredsställa era förfrågningar; vår målsättning är att erbjuda det ni verkligen behöver.
+          </p>
+        </div>
+
+      </section>
+      <section class="h-[60vh] w-full text-center grid place-items-center px-6 py-12 bg-[#006d77] text-[#edf6f9]">
+        <div class="max-w-[60ch]">
+          <h3 class="preamble uppercase opacity-70 text-xs">
+            Vår Ambition
+          </h3>
+          <h2 class="title text-4xl">
+            Vi kommer inte att bli det största bolaget, däremot <span
+              class="uppercase font-extrabold text-7xl font-fancy italic text-[#f7b801]">det
+              bästa</span>
+          </h2>
+        </div>
+      </section>
+      <section
+        class="max-w-[120ch] px-8 py-12 grid place-items-center grid-cols-1 lg:grid-cols-3 gap-x-16 gap-y-16 lg:gap-y-20">
+        <div class="lg:col-span-1">
+          <h2 class="title text-4xl">Om oss</h2>
+          <p class="text">
+            Är du trött på konsultbolag som skyfflar CV och ser människor som anonyma resurser istället för unika
+            individer
+            med olika kompetenser och erfarenheter? Vill du ha ett konsultbolag som lär känna dig som kund för att kunna
+            hitta rätt konsulter? Då har du kommit rätt.
+          </p>
+          <center class="text">
+            Välkommen till <strong>The Tribe ❤️</strong>
+          </center>
+        </div>
+        <img class="lg:col-span-2" src="/img/65a7f2f1eff30a479b3d90e7.webp" alt="The Tribe CEO">
+      </section>
+      <section class="max-w-[100ch] w-full px-8 py-12">
+        <h3 class="preamble uppercase opacity-70 text-xs text-center mb-[2em]">
+          Språk och Plattformar som vi ofta jobbar med
+        </h3>
+        <div class="languages">
+          <fieldset id="languages">
+            <div class="rounded-2xl w-full col-start-1 col-span-2 row-span-2">
+              <img class="aspect-square object-contain w-full" src="/img/logo/dotnet.svg" alt="">
+            </div>
+            <div class="rounded-2xl w-full col-end-9 col-span-3 row-span-3">
+              <img class="aspect-square object-contain w-full" src="/img/logo/gopher.webp" alt="">
+            </div>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/bun_sh.svg" alt="">
+              <input type="radio" name="lang" checked>
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/android.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/aws.svg" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/azure.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/typescript.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/docker.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/gcp.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/graphql.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/java.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/javascript.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/kotlin.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/kubernetes.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/nextjs.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/node.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/optimizely.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/python.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/rust.svg" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/svelte.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/terraform.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+            <label class="rounded-2xl w-full">
+              <img class="aspect-square object-contain w-full" src="/img/logo/vue.webp" alt="">
+              <input type="radio" name="lang">
+            </label>
+          </fieldset>
+        </div>
+      </section>
+      <section id="contact"
+        class="max-w-[100ch] px-8 py-12 grid place-items-center grid-cols-1 lg:grid-cols-3 gap-x-16 gap-y-16 lg:gap-y-20">
+        <img class="lg:col-span-2" src="/img/65e053b4c1abcf3d75202eb9.webp" alt="old telephone">
+        <div>
+          <h2 class="title text-4xl">Kontakta oss</h2>
+          <p class="text">
+            Nog om oss. Vi söker alltid efter duktiga medarbetare och nya spännande samarbeten så tveka inte att höra av
+            dig!
+          </p>
+        </div>
+      </section>
+      <section class="max-w-[100ch] px-8">
+        <a href="https://maps.app.goo.gl/addkSC9Zocqfmm5V9" alt="maps link to office location" target="_blank"
+          rel="noopener">
+          <img src="/img/map.webp" alt="map of office location" class="aspect-[3] max-h-[300px] w-full object-cover">
+        </a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-grey-50 px-12 py-20 bg-gray-100 border-t">
+    <section class="grid grid-cols-3 gap-3">
+      <div>
+        <a href="/" alt="link to homepage">
+          <img src="/img/thetribe-logo.svg" alt="The Tribe logo" width="108">
+        </a>
+      </div>
+      <div>
+        <address class="inline-grid gap-3 not-italic">
+          <div class="inline-flex gap-2 justify-center items-start">
+            <img src="/icons/map-pin.svg" alt="" class="w-[1.2em] aspect-square">
+            <div class="flex flex-col">
+              <strong>The Tribe</strong>
+              <span>Tegelgårdsgatan 7B</span>
+              <span>211 33 Malmö</span>
+            </div>
+          </div>
+          <a href="mailto:hello@thetribe.tech?subject=Hello!" alt="contact email link"
+            class="inline-flex gap-2 items-center">
+            <img src="/icons/envelope.svg" alt="" class="w-[1.2em] aspect-square">
+            <span>hello@thetribe.tech</span>
+          </a>
+        </address>
+      </div>
+      <div class="grid gap-3 grid-cols-3 place-items-center">
+        <div></div>
+        <a href="https://www.linkedin.com/company/thetribetech" alt="The Tribe linkedin profile" targe="_blank"
+          rel="noopener">
+          <img src="/icons/linkedin.svg" alt="" class="w-[2em] aspect-square">
+        </a>
+        <a href="https://github.com/thetribe-tech" alt="The Tribe github portfolio" target="_blank" rel="noopener">
+          <img src="/icons/github.svg" alt="" class="w-[2em] aspect-square">
+        </a>
+      </div>
     </section>
   </footer>
 </body>

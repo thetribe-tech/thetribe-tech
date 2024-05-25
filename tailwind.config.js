@@ -2,7 +2,12 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        fancy: ['Cookie', 'Apple Chancery', 'cursive'],
+      },
+    },
   },
   plugins: [
   ],
